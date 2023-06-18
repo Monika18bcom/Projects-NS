@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* Hero Section */
+
+#hero {
+    background-image: url(https://imgv3.fotor.com/images/blog-cover-image/JPEG-banner.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#span1 {
+    font-size: 0.5em;
+}
+
+.heroh1 {
+    margin-left: 80px;
+    margin-top: 200px;
+}
+
+.heroh2 {
+    margin-left:80px;
+}
+
+
+
+/* Black-Box Section */
+
+#black-box {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#span2 {
+    font-size: 1.5em;
+}
+
+/* Card Container Section */
+
+#card-container {
+    margin: 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    width: 20%;
+    height: 85%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+img {
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.card-text > p {
+    padding: 5px;
+}
+
+
+/* Bottom Section */
+
+#bottom {
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact  {
+    width: 40%;
+    background-color: green;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#about {
+    width: 40%;
+    background-color: brown;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.bottom-text {
+    font-size: 10px;
+    padding: 15px;
+}
+
+/* Project Responsive */
+
+@media(width <= 650px){
+    #card-container {
+        flex-direction: column;
+        height: auto;
+        /* justify-content: flex-start; */
+        align-items: center;
+    }
+
+    .card {
+        width: 85%;
+        height: auto;
+        margin: 10px;
+    }
+
+    #bottom {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #contact, #about {
+        width: 100%;
+        margin: 0;
+    }
+}
